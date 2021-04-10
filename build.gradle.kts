@@ -5,8 +5,14 @@ buildscript {
     dependencies {
         classpath(GradlePlugins.Android)
         classpath(GradlePlugins.Kotlin)
+        classpath(GradlePlugins.Hilt)
     }
 }
+
+plugins {
+    id("de.fayard.buildSrcVersions") version "0.7.0"
+}
+
 
 allprojects {
     repositories.applyDefault()

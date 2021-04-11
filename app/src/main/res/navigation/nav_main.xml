@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_main"
+    app:startDestination="@id/nav_ic_tab0">
+
+    <fragment
+        android:id="@+id/nav_ic_tab0"
+        android:name="com.meksconways.plantsworld.feature.plants.PlantsFragment"
+        android:label="@string/tab_name_plants"
+        tools:layout="@layout/fragment_plants" />
+
+    <fragment
+        android:id="@+id/nav_ic_tab1"
+        android:name="com.meksconways.plantsworld.feature.families.FamiliesFragment"
+        android:label="@string/tab_name_families"
+        tools:layout="@layout/fragment_families" />
+
+    <fragment
+        android:id="@+id/nav_ic_tab2"
+        android:name="com.meksconways.plantsworld.feature.distributions.DistributionsFragment"
+        android:label="@string/tab_name_distributions"
+        tools:layout="@layout/fragment_distributions" />
+
+    <fragment
+        android:id="@+id/nav_ic_tab3"
+        android:name="com.meksconways.plantsworld.feature.genus.GenusFragment"
+        android:label="@string/tab_name_genus"
+        tools:layout="@layout/fragment_genus" />
+
+    <fragment
+        android:id="@+id/nav_ic_tab4"
+        android:name="com.meksconways.plantsworld.feature.settings.SettingsFragment"
+        android:label="@string/tab_name_settings"
+        tools:layout="@layout/fragment_settings" />
+
+</navigation>

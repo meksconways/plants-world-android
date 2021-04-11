@@ -14,7 +14,7 @@ object Dependencies {
         const val cardView = "androidx.cardview:cardview:${Versions.cardView}"
 
         const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
-        const val navigationFragment = "androidx.navigation:navigation-fragment-ktx${Versions.navigation}"
+        const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
 
         const val lifecycleRuntime = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycle}"
         const val lifecycleExtensions = "androidx.lifecycle:lifecycle-extensions:${Versions.lifecycle}"
@@ -25,11 +25,15 @@ object Dependencies {
         const val collectionKtx = "androidx.collection:collection-ktx:${Versions.collection}"
     }
 
+    object Common {
+        const val bindable = "com.github.skydoves:bindables:${Versions.bindable}"
+    }
+
     object DI {
         const val hiltAndroid = "com.google.dagger:hilt-android:${Versions.hilt}"
         const val hiltAndroidCompiler = "com.google.dagger:hilt-android-compiler:${Versions.hilt}" //kapt
-        const val hiltViewModel = "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.hilt}"
-        const val hiltCompiler = "androidx.hilt:hilt-compiler:${Versions.hilt}" //kapt
+        const val hiltViewModel = "androidx.hilt:hilt-lifecycle-viewmodel:${Versions.hilt_viewmodel}"
+        const val hiltCompiler = "androidx.hilt:hilt-compiler:${Versions.hilt_viewmodel}" //kapt
     }
 
     object Networking {

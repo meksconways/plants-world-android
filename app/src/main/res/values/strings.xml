@@ -1,3 +1,8 @@
 <resources>
-    <string name="app_name">plants-world-android</string>
+    <string name="app_name">Plants World</string>
+    <string name="tab_name_plants">Plants</string>
+    <string name="tab_name_families">Families</string>
+    <string name="tab_name_distributions">Distributions</string>
+    <string name="tab_name_genus">Genus</string>
+    <string name="tab_name_settings">Settings</string>
 </resources>

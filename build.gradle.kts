@@ -1,11 +1,14 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
+    val kotlin_version by extra("1.4.32")
     repositories.applyDefault()
     dependencies {
         classpath(GradlePlugins.Android)
         classpath(GradlePlugins.Kotlin)
         classpath(GradlePlugins.Hilt)
+        classpath(GradlePlugins.NavigationComponent)
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version")
     }
 }
 

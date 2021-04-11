@@ -49,6 +49,10 @@ fun DependencyHandler.addAndroidXDependencies() {
     add(Dependencies.AndroidX.rv)
 }
 
+fun DependencyHandler.addCommonDependencies() {
+    add(Dependencies.Common.bindable)
+}
+
 fun DependencyHandler.addNetworkingDependencies() {
     add(Dependencies.Networking.gsonConverter)
     add(Dependencies.Networking.retrofit)
@@ -63,4 +67,5 @@ fun RepositoryHandler.applyDefault() {
     google()
     jcenter()
     mavenCentral()
+    maven("https://oss.sonatype.org/content/repositories/snapshots/")
 }
